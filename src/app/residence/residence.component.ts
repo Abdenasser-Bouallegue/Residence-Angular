@@ -9,11 +9,11 @@ import { Apartment } from '../models/appartement';
 })
 export class ResidenceComponent {
   selectresidence!:number ;
-  App=Apartment[];
+  App:Apartment[]=[];
   show(residence:number){
     for (let i=0 ; this.appartementsList.length;i++)
     if (this.appartementsList[i].residence.id==residence)
-    App.psuh(this.App[i]);
+    this.App.push(this.App[i]);
 
 
     
